@@ -8,7 +8,7 @@ class ComponenteA extends React.Component {
 
     return (
       <div>
-        <h2>Información de contacto:</h2>
+        <h1>Información de contacto:</h1>
         <p>Nombre: {nombre}</p>
         <p>Apellido: {apellido}</p>
         <p>Email: {email}</p>
