@@ -6,10 +6,10 @@ export class Task {
     completed = false;
     level = LEVELS.NORMAL;
 
-    constructor(name, description, completed){
+    constructor( name, description, completed, level ){
         this.name = name;
         this.description = description;
         this.completed = completed;
-        this.level = this.level;
+        this.level = level;
     }
 }
