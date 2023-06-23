@@ -12,6 +12,7 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import Greetingstyled from './components/pure/greetingStyled';
 import Clock from './components/container/clock';
 import Father from './components/container/father';
+import ContactList from './components/container/contact_list';
 
 function App() {
   const ejemploContacto = new Contacto('Juan', 'Pérez', 'juan@example.com', true);
@@ -44,7 +45,8 @@ function App() {
         {/* <Clock></Clock> */}
 
       {/* </header> */}
-      <Father></Father>
+      {/* <Father></Father> */}
+      <ContactList></ContactList>
     </div>
   );
 }

@@ -54,11 +54,11 @@ const TaskComponent = ({ task, complete, remove }) => {
      /**
      * Function that returns icon depending on completion of the task
      */
-     function taskCompletedIcon(){
+    function taskCompletedIcon(){
         if(task.completed){
-            return (<i  className='bi-toggle-on task-action' style={{color: 'green'}}></i>)
+            return (<i onClick={() => complete(task)} className='bi-toggle-on task-action' style={{color: 'green'}}></i>)
         }else{
-            return (<i  className='bi-toggle-off task-action' style={{color: 'grey'}}></i>)
+            return (<i onClick={() => complete(task)}  className='bi-toggle-off task-action' style={{color: 'grey'}}></i>)
         }
     }
 
@@ -81,7 +81,7 @@ const TaskComponent = ({ task, complete, remove }) => {
                 {/* Execution of function to return icon depending on completion */}
                 <span>{task.completed}</span>
                 {taskCompletedIcon()}
-                <i className='bi-trash task-action' style={{color: 'tomato'}} ></i>
+                <i className='bi-trash task-action' style={{color: 'tomato'}} onClick={() => remove(task)}></i>
             </td>
         </tr>
 
@@ -90,7 +90,9 @@ const TaskComponent = ({ task, complete, remove }) => {
 
 
 TaskComponent.propTypes = {
-    task: PropTypes.instanceOf(Task)
+    task: PropTypes.instanceOf(Task).isRequired,
+    complete: PropTypes.func.isRequired,
+    remove: PropTypes.func.isRequired
 };
 
 
