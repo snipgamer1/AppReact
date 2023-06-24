@@ -14,6 +14,8 @@ import Clock from './components/container/clock';
 import Father from './components/container/father';
 import ContactList from './components/container/contact_list';
 import Optionalrender from './components/pure/optionalRender';
+import RenderSqr from './components/container/renderElem';
+
 
 function App() {
   // const ejemploContacto = new Contacto('Juan', 'Pérez', 'juan@example.com', true);
@@ -50,6 +52,7 @@ function App() {
       {/* Ejercicios 7, 8, 9*/}
       {/* <ContactList/> */}
       <Optionalrender/>
+      <RenderSqr/>
     </div>
   );
 }
