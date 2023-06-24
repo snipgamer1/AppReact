@@ -13,9 +13,10 @@ import Greetingstyled from './components/pure/greetingStyled';
 import Clock from './components/container/clock';
 import Father from './components/container/father';
 import ContactList from './components/container/contact_list';
+import Optionalrender from './components/pure/optionalRender';
 
 function App() {
-  const ejemploContacto = new Contacto('Juan', 'Pérez', 'juan@example.com', true);
+  // const ejemploContacto = new Contacto('Juan', 'Pérez', 'juan@example.com', true);
 
   return (
     <div className="App">
@@ -46,7 +47,9 @@ function App() {
 
       {/* </header> */}
       {/* <Father></Father> */}
-      <ContactList></ContactList>
+      {/* Ejercicios 7, 8, 9*/}
+      {/* <ContactList/> */}
+      <Optionalrender/>
     </div>
   );
 }
