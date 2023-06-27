@@ -51,8 +51,8 @@ function App() {
       {/* <Father></Father> */}
       {/* Ejercicios 7, 8, 9*/}
       {/* <ContactList/> */}
-      <Optionalrender/>
-      <RenderSqr/>
+      {/* <Optionalrender/>
+      <RenderSqr/> */}
     </div>
   );
 }
