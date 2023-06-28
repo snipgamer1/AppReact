@@ -16,6 +16,7 @@ import ContactList from './components/container/contact_list';
 import Optionalrender from './components/pure/optionalRender';
 import RenderSqr from './components/container/renderElem';
 import Loginformik from './components/pure/forms/loginFormik';
+import Registerformik from './components/pure/forms/registerFormik';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
       <RenderSqr/> */}
       {/* Ejemplos uso de formik y yup */}
       <Loginformik/>
+      <Registerformik/>
     </div>
   );
 }
