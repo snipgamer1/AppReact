@@ -17,6 +17,7 @@ import Optionalrender from './components/pure/optionalRender';
 import RenderSqr from './components/container/renderElem';
 import Loginformik from './components/pure/forms/loginFormik';
 import Registerformik from './components/pure/forms/registerFormik';
+import Taskformik from './components/pure/forms/taskFormik';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
       {/* Ejemplos uso de formik y yup */}
       <Loginformik/>
       <Registerformik/>
+      {/* <Taskformik/> */}
     </div>
   );
 }
