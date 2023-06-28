@@ -15,6 +15,7 @@ import Father from './components/container/father';
 import ContactList from './components/container/contact_list';
 import Optionalrender from './components/pure/optionalRender';
 import RenderSqr from './components/container/renderElem';
+import Loginformik from './components/pure/forms/loginFormik';
 
 
 function App() {
@@ -53,6 +54,8 @@ function App() {
       {/* <ContactList/> */}
       {/* <Optionalrender/>
       <RenderSqr/> */}
+      {/* Ejemplos uso de formik y yup */}
+      <Loginformik/>
     </div>
   );
 }
