@@ -18,6 +18,10 @@ import RenderSqr from './components/container/renderElem';
 import Loginformik from './components/pure/forms/loginFormik';
 import Registerformik from './components/pure/forms/registerFormik';
 import Taskformik from './components/pure/forms/taskFormik';
+import Asyncexample from './components/pure/AsyncExample';
+import Observableexample from './components/pure/ObservableExample';
+import Fetchexample from './components/pure/FetchExample';
+import Axiosexample from './components/pure/AxiosExample';
 
 
 function App() {
@@ -33,7 +37,7 @@ function App() {
         {/* componente de ejemplo Funcional */}
         {/* <GreetingF name='Snip'></GreetingF> */}
         {/* Componente de listad de Tareas */}
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
         {/* Ejercicios 1, 2, 3*/}
         {/* <ComponenteA contacto={ejemploContacto}></ComponenteA> */}
         {/* Ejemplo de uso de Hooks */}
@@ -57,9 +61,14 @@ function App() {
       {/* <Optionalrender/>
       <RenderSqr/> */}
       {/* Ejemplos uso de formik y yup */}
-      <Loginformik/>
-      <Registerformik/>
+      {/* <Loginformik/>
+      <Registerformik/> */}
       {/* <Taskformik/> */}
+      {/* Ejemplos de procesos asincronos */}
+      <Asyncexample></Asyncexample>
+      <Observableexample></Observableexample>
+      <Fetchexample/>
+      <Axiosexample/>
     </div>
   );
 }

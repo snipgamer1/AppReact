@@ -9,7 +9,7 @@ const getIcon = (icon) => {
             case 'HOME':
                 return(<Space><HomeOutlined/></Space>)
             case 'TASK':
-                return(<Space><Task/></Space>)
+                return(<Space></Space>)
             case 'SETTINGS':
             return(<Space><SettingOutlined/></Space>)
             default:
@@ -24,20 +24,21 @@ const MenuListItems =({list}) =>{
     }
 
     return(
-        <list>
-             {list.map(({text, path, icon}, index) => 
-                (
-                    <ListItem key={index} button onClick={() => navigateTo(path)}>
-                        <ListItemIcon>
-                            {getIcon(icon)}
-                        </ListItemIcon>
-                        <ListItemText 
-                            primary={text}
-                        />
-                    </ListItem>
-                )
-            )}
-        </list>
+        <div></div>
+        // <list>
+        //      {list.map(({text, path, icon}, index) => 
+        //         (
+        //             {/* <ListItem key={index} button onClick={() => navigateTo(path)}>
+        //                 <ListItemIcon>
+        //                     {getIcon(icon)}
+        //                 </ListItemIcon>
+        //                 <ListItemText 
+        //                     primary={text}
+        //                 />
+        //             </ListItem>
+        //         ) */}
+        //     )}
+        // </list>
     )
 }
 
