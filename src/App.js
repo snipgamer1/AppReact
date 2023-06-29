@@ -22,6 +22,7 @@ import Asyncexample from './components/pure/AsyncExample';
 import Observableexample from './components/pure/ObservableExample';
 import Fetchexample from './components/pure/FetchExample';
 import Axiosexample from './components/pure/AxiosExample';
+import CardContainer from './components/pure/Chistes';
 
 
 function App() {
@@ -65,10 +66,11 @@ function App() {
       <Registerformik/> */}
       {/* <Taskformik/> */}
       {/* Ejemplos de procesos asincronos */}
-      <Asyncexample></Asyncexample>
+      {/* <Asyncexample></Asyncexample>
       <Observableexample></Observableexample>
       <Fetchexample/>
-      <Axiosexample/>
+      <Axiosexample/> */}
+      <CardContainer/>
     </div>
   );
 }
